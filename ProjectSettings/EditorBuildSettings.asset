@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
-    guid: 7b24319e54718284c8482b72efdd2f6a
-  - enabled: 1
     path: Assets/Scenes/MorningScene.unity
     guid: 5222e06085e671a4d979e4dfcfeb9bd4
+  - enabled: 1
+    path: Assets/Scenes/ArvoScene.unity
+    guid: 77b4015d3f5946b49a999b560aab9ed0
+  - enabled: 1
+    path: Assets/Scenes/NightScene.unity
+    guid: 990b78d6875fcf047b0b50dc0ba91e88
   m_configObjects: {}
