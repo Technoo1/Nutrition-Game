@@ -19,6 +19,8 @@ public class BackgroundSwapper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
+        
         if (Input.GetKeyDown(KeyCode.Alpha1) && image.sprite != backgroundImageList[0]) // set the value in "backgroundImageList[?] to the position of the image you're switching to
         {
             backgroundImageValue = 0; // change this to the position of the image you're switching to in the list
@@ -34,7 +36,48 @@ public class BackgroundSwapper : MonoBehaviour
             backgroundImageValue = 2; // change this to the position of the image you're switching to in the list
             StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
         }
+
+        */
     }
+
+
+    public void CafeteriaMidday() // called by the dialogue
+    {
+        backgroundImageValue = 0; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void ClassMidday() // called by the dialogue
+    {
+        backgroundImageValue = 1; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void OutsideSchoolMidday() // called by the dialogue
+    {
+        backgroundImageValue = 2; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void BedroomNight() // called by the dialogue
+    {
+        backgroundImageValue = 3; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void KitchenMidday() // called by the dialogue
+    {
+        backgroundImageValue = 4; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void LoungeNight() // called by the dialogue
+    {
+        backgroundImageValue = 5; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void TableMidday() // called by the dialogue
+    {
+        backgroundImageValue = 6; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+
+
 
     IEnumerator FadeToBlack()
     {
@@ -71,14 +114,5 @@ public class BackgroundSwapper : MonoBehaviour
         image.color = Color.white;
     }
 
-    public void GoToThisPlace() // called by the dialogue
-    {
-        backgroundImageValue = 1; // change this to the position of the image you're switching to in the list
-        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
-    }
-    public void GoToThatPlace() // called by the dialogue
-    {
-        backgroundImageValue = 2; // change this to the position of the image you're switching to in the list
-        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
-    }
+
 }
