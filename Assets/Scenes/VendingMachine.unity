@@ -812,7 +812,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 161
   indentLevel: 0
-  storyText: Time for bed.
+  storyText: 'Time to head home.
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -839,14 +841,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 308.91696
+    x: 286.91696
     y: 131.83885
-    width: 104
+    width: 172
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 160
-  blockName: Night End
+  blockName: Vending Machine End
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -944,7 +946,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Lounge
+        stringVal: VendingMachine
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -1113,7 +1115,7 @@ MonoBehaviour:
           spriteVal: {fileID: 0}
         stringData:
           stringRef: {fileID: 0}
-          stringVal: Lounge
+          stringVal: VendingMachine
         textureData:
           textureRef: {fileID: 0}
           textureVal: {fileID: 0}
@@ -1353,7 +1355,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Kitchen
+        stringVal: VendingMachine
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -1453,8 +1455,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: KitchenMidday
-  targetMethodText: 'KitchenMidday (): Void'
+  targetMethod: VendingMachine
+  targetMethodText: 'VendingMachine (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -1550,7 +1552,7 @@ MonoBehaviour:
           spriteVal: {fileID: 0}
         stringData:
           stringRef: {fileID: 0}
-          stringVal: Kitchen
+          stringVal: VendingMachine
         textureData:
           textureRef: {fileID: 0}
           textureVal: {fileID: 0}
@@ -1790,7 +1792,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Kitchen
+        stringVal: VendingMachine
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -1987,7 +1989,7 @@ MonoBehaviour:
           spriteVal: {fileID: 0}
         stringData:
           stringRef: {fileID: 0}
-          stringVal: Kitchen
+          stringVal: VendingMachine
         textureData:
           textureRef: {fileID: 0}
           textureVal: {fileID: 0}
@@ -2227,7 +2229,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Kitchen
+        stringVal: VendingMachine
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -2382,7 +2384,7 @@ MonoBehaviour:
           spriteVal: {fileID: 0}
         stringData:
           stringRef: {fileID: 0}
-          stringVal: Kitchen
+          stringVal: VendingMachine
         textureData:
           textureRef: {fileID: 0}
           textureVal: {fileID: 0}
@@ -2653,7 +2655,7 @@ MonoBehaviour:
           spriteVal: {fileID: 0}
         stringData:
           stringRef: {fileID: 0}
-          stringVal: Table
+          stringVal: VendingMachine
         textureData:
           textureRef: {fileID: 0}
           textureVal: {fileID: 0}
@@ -2893,7 +2895,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Table
+        stringVal: VendingMachine
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -3045,7 +3047,7 @@ MonoBehaviour:
         spriteVal: {fileID: 0}
       stringData:
         stringRef: {fileID: 0}
-        stringVal: Lounge
+        stringVal: VendingMachine
       textureData:
         textureRef: {fileID: 0}
         textureVal: {fileID: 0}
@@ -3169,7 +3171,7 @@ MonoBehaviour:
   itemId: 140
   indentLevel: 1
   targetFlowchart: {fileID: 708041630}
-  targetBlock: {fileID: 708041573}
+  targetBlock: {fileID: 708041506}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3617,7 +3619,7 @@ MonoBehaviour:
   itemId: 131
   indentLevel: 1
   targetFlowchart: {fileID: 708041630}
-  targetBlock: {fileID: 708041573}
+  targetBlock: {fileID: 708041506}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4065,7 +4067,7 @@ MonoBehaviour:
   itemId: 122
   indentLevel: 1
   targetFlowchart: {fileID: 708041630}
-  targetBlock: {fileID: 708041573}
+  targetBlock: {fileID: 708041506}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4513,7 +4515,7 @@ MonoBehaviour:
   itemId: 113
   indentLevel: 1
   targetFlowchart: {fileID: 708041630}
-  targetBlock: {fileID: 708041573}
+  targetBlock: {fileID: 708041506}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -5148,7 +5150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 101
   indentLevel: 1
-  storyText: It's getting late. I should...
+  storyText: Maybe I should head home for the afternoon.
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5176,7 +5178,7 @@ MonoBehaviour:
   itemId: 100
   indentLevel: 1
   targetFlowchart: {fileID: 708041630}
-  targetBlock: {fileID: 708041573}
+  targetBlock: {fileID: 708041506}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -5468,7 +5470,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 95
   indentLevel: 0
-  storyText: It's getting late. Time to change into some fresh clothes.
+  storyText: 'Ah the vending machine. I could go for a quick snack.
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5541,7 +5545,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 92
   indentLevel: 0
-  storyText: '*relaxes*'
+  storyText: 'On second thought, maybe I will just eat at home.
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5568,7 +5574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: '*checks for leftovers'
+  storyText: 'Got myself a bag of lollies.
+
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5595,7 +5604,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 90
   indentLevel: 0
-  storyText: '*makes and doesn''t eat large meals*'
+  storyText: 'Packet of Chips... Tasty.
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5622,7 +5633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 89
   indentLevel: 0
-  storyText: '*cooks and eats a meal*'
+  storyText: Please revive me oh precious energy drink
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5649,7 +5660,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 0
-  storyText: '*studies*'
+  storyText: 'Love me some chocolate
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5676,7 +5689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  text: Relax
+  text: 'On second thoughts...
+
+'
   description: 
   targetBlock: {fileID: 708041576}
   hideIfVisited: 0
@@ -5701,7 +5716,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  text: Check for leftovers
+  text: 'Bag of Lollies
+
+'
   description: 
   targetBlock: {fileID: 708041575}
   hideIfVisited: 0
@@ -5726,7 +5743,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  text: Cook a large meal
+  text: 'Packet of Chips
+
+'
   description: 
   targetBlock: {fileID: 708041577}
   hideIfVisited: 0
@@ -5751,7 +5770,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 82
   indentLevel: 0
-  text: Cook and eat a small meal
+  text: 'Energy Drink
+
+'
   description: 
   targetBlock: {fileID: 708041578}
   hideIfVisited: 0
@@ -5776,7 +5797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
-  text: Study
+  text: Chocolate Bar
   description: 
   targetBlock: {fileID: 708041579}
   hideIfVisited: 0
@@ -5803,12 +5824,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.18216
     y: -101.47658
-    width: 151
+    width: 175
     height: 40
   tint: {r: 1, g: 0.572327, b: 0.7979817, a: 1}
   useCustomTint: 1
   itemId: 87
-  blockName: What to do today?
+  blockName: What should I choose?
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -5861,14 +5882,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 468.34082
-    y: -7.742617
-    width: 103
+    x: 471.34082
+    y: 1.2573829
+    width: 86
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 64
-  blockName: Leftovers
+  blockName: Lollies
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -5899,14 +5920,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 633.7429
-    y: -3.360611
-    width: 81
+    x: 623.7429
+    y: -2.360611
+    width: 132
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 63
-  blockName: Relax
+  blockName: Changed Mind
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -5938,14 +5959,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 313.01984
-    y: 16.2138
-    width: 96
+    x: 301.01984
+    y: 7.2138004
+    width: 139
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 62
-  blockName: BigMeal
+  blockName: Packet of Chips
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -5976,14 +5997,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 137.66713
-    y: -0.7607832
-    width: 102
+    x: 115.66713
+    y: -1.7607832
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 61
-  blockName: FastMeal
+  blockName: Energy Drink
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -6014,14 +6035,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -4.814662
-    y: -0.68022823
-    width: 83
+    x: -80.81467
+    y: -5.680228
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 60
-  blockName: Study
+  blockName: Chocolate Bar
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -6088,14 +6109,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 300.10648
-    y: -192.64175
-    width: 110
+    x: 293.10648
+    y: -194.64175
+    width: 148
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
   itemId: 0
-  blockName: Night Start
+  blockName: Vending Machine
   description: 
   eventHandler: {fileID: 708041628}
   commandList:
@@ -6121,7 +6142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 137.7194, y: 234.82109}
+  scrollPos: {x: 304.17404, y: 358.04822}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 313
@@ -6133,8 +6154,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 708041573}
-  selectedCommands: []
+  - {fileID: 708041629}
+  selectedCommands:
+  - {fileID: 708041524}
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -6806,7 +6828,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 181
   indentLevel: 1
-  storyText: It's getting late. I should...
+  storyText: 'Maybe I should head home for the afternoon.
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -6833,7 +6857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 180
   indentLevel: 1
-  storyText: It's getting late. I should...
+  storyText: Maybe I should head home for the afternoon.
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -6860,7 +6884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 179
   indentLevel: 1
-  storyText: It's getting late. I should...
+  storyText: Maybe I should head home for the afternoon.
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -6887,7 +6911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 178
   indentLevel: 1
-  storyText: It's getting late. I should...
+  storyText: Maybe I should head home for the afternoon.
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -6914,7 +6938,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 177
   indentLevel: 0
-  storyText: What should I do now?
+  storyText: 'What should I choose?
+
+'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -7238,6 +7264,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6ae9ccfed94e20c48bd6cbdd2fc91471, type: 3}
   - {fileID: 21300000, guid: 847c239487b70c446bbf157c432c902b, type: 3}
   - {fileID: 21300000, guid: 03f29604eeca0c84587daa9b7aa433d5, type: 3}
+  - {fileID: 21300000, guid: 265009e7516ab434ebf054eaeb1e9360, type: 3}
   image: {fileID: 1046890586}
   fadeDuration: 0.2
   backgroundImageValue: 0
@@ -7261,7 +7288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 847c239487b70c446bbf157c432c902b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 265009e7516ab434ebf054eaeb1e9360, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
