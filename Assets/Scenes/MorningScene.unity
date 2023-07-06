@@ -3286,6 +3286,7 @@ GameObject:
   - component: {fileID: 1549069109}
   - component: {fileID: 1549069124}
   - component: {fileID: 1549069123}
+  - component: {fileID: 1549069125}
   m_Layer: 0
   m_Name: FlowchartMorn
   m_TagString: Untagged
@@ -3316,7 +3317,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Morning Start
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1549069125}
   commandList:
   - {fileID: 1549069048}
   - {fileID: 1549069108}
@@ -3364,7 +3365,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1549068954}
   selectedCommands:
-  - {fileID: 1549069107}
+  - {fileID: 1549068997}
   variables:
   - {fileID: 1549069124}
   - {fileID: 1549069123}
@@ -4476,8 +4477,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: You wake up to a fresh new day.
   description: 
-  character: {fileID: 1619154201}
-  portrait: {fileID: 21300000, guid: b8a81a2daf1147a4bbe6cb0df8c449f7, type: 3}
+  character: {fileID: 0}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -11394,6 +11395,21 @@ MonoBehaviour:
   scope: 1
   key: Activity1Finished
   value: 0
+--- !u!114 &1549069125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1549068954}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!1 &1619154200
 GameObject:
   m_ObjectHideFlags: 0
