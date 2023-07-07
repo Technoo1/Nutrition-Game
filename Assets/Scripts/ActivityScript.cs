@@ -21,4 +21,9 @@ public class ActivityScript : MonoBehaviour
         Debug.Log("+10 to energy");
         Debug.Log("Your energy is " + GameManager.instance.energy);
     }
+    public void Healthy1()
+    {
+        GameManager.instance.energy += 10;
+        GameManager.instance.health += 10;
+    }
 }
