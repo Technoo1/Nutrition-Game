@@ -2425,6 +2425,7 @@ GameObject:
   - component: {fileID: 1022661871}
   - component: {fileID: 1022661870}
   - component: {fileID: 1022661869}
+  - component: {fileID: 1022661873}
   m_Layer: 5
   m_Name: PlayerView
   m_TagString: Untagged
@@ -2516,6 +2517,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1022661873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022661868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93bec59e0e4ed1547a90bf724c47feb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1134882225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,6 +3007,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310304083}
   m_CullTransparentMesh: 1
+--- !u!1 &1361060790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1361060792}
+  - component: {fileID: 1361060791}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1361060791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361060790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa83d127ce3c3cc44ac7cdaf12c07bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  stress: 10
+  energy: 10
+  academicAbilty: 10
+  budget: 50
+--- !u!4 &1361060792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361060790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 709.14075, y: 370.3627, z: 829.1988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1517499901
 GameObject:
   m_ObjectHideFlags: 0
@@ -3287,6 +3349,10 @@ GameObject:
   - component: {fileID: 1549069124}
   - component: {fileID: 1549069123}
   - component: {fileID: 1549069125}
+  - component: {fileID: 1549069126}
+  - component: {fileID: 1549069127}
+  - component: {fileID: 1549069129}
+  - component: {fileID: 1549069128}
   m_Layer: 0
   m_Name: FlowchartMorn
   m_TagString: Untagged
@@ -3310,7 +3376,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 293.05542
     y: -188.02422
-    width: 125.29413
+    width: 125.60141
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -3351,11 +3417,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 356.9362, y: 311.05853}
+  scrollPos: {x: 165.69127, y: 347.2799}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 446
-  zoom: 0.84999985
+  zoom: 0.96999955
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -3363,9 +3429,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1549068954}
+  - {fileID: 1549069011}
   selectedCommands:
-  - {fileID: 1549068997}
+  - {fileID: 1549069127}
   variables:
   - {fileID: 1549069124}
   - {fileID: 1549069123}
@@ -3614,7 +3680,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -475.3919
     y: -294.5374
-    width: 100.58824
+    width: 99.48456
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3671,7 +3737,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -620.68884
     y: -93.48426
-    width: 85.29413
+    width: 85.738846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3727,7 +3793,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -366.48563
     y: -186.8126
-    width: 91.17648
+    width: 91.92442
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3834,7 +3900,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -532.1504
     y: -25.29927
-    width: 110.000015
+    width: 107.0447
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3942,7 +4008,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -344.8137
     y: -97.09604
-    width: 125.29413
+    width: 124.22684
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4123,7 +4189,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -523.2164
     y: 107.54176
-    width: 90.00001
+    width: 89.862564
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4326,7 +4392,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -305.91837
     y: 94.308464
-    width: 111.17648
+    width: 109.10655
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4702,7 +4768,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 456.4006
     y: -1.772471
-    width: 101.76472
+    width: 102.92099
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4740,7 +4806,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 591.0587
     y: -1.5370805
-    width: 81.76471
+    width: 80.92785
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4755,6 +4821,8 @@ MonoBehaviour:
   - {fileID: 1549069083}
   - {fileID: 1549069058}
   - {fileID: 1549069037}
+  - {fileID: 1549069129}
+  - {fileID: 1549069128}
   - {fileID: 1549069057}
   - {fileID: 1549069097}
   - {fileID: 1549069054}
@@ -4778,7 +4846,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 309.89484
     y: 17.7763
-    width: 97.05883
+    width: 95.36085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4816,7 +4884,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 155.31415
     y: -3.1137247
-    width: 101.76472
+    width: 101.54642
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4852,9 +4920,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 12.7678
-    y: -1.3156255
-    width: 82.94118
+    x: 16.176893
+    y: -3.4829178
+    width: 82.9897
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4869,6 +4937,8 @@ MonoBehaviour:
   - {fileID: 1549069047}
   - {fileID: 1549069043}
   - {fileID: 1549069041}
+  - {fileID: 1549069127}
+  - {fileID: 1549069126}
   - {fileID: 1549069032}
   - {fileID: 1549069101}
   - {fileID: 1549069029}
@@ -5066,7 +5136,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.18216
     y: -101.47658
-    width: 151.17648
+    width: 149.6564
     height: 40
   tint: {r: 1, g: 0.572327, b: 0.7979817, a: 1}
   useCustomTint: 1
@@ -5476,7 +5546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 92
   indentLevel: 0
-  storyText: zzz...
+  storyText: Ahh... I feel way less stressed. I have a lot of energy now as well!
   description: 
   character: {fileID: 79247048}
   portrait: {fileID: 0}
@@ -5584,7 +5654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 0
-  storyText: '*studies*'
+  storyText: This was a productive study session. I feel like my academic ability
+    has improved!
   description: 
   character: {fileID: 79247048}
   portrait: {fileID: 0}
@@ -10114,7 +10185,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.7197
     y: 186.22568
-    width: 120.58825
+    width: 118.72855
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11343,7 +11414,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 768.48145
     y: 1.0818748
-    width: 150.00002
+    width: 146.21997
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11397,7 +11468,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1549069125
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -11410,6 +11481,98 @@ MonoBehaviour:
   parentBlock: {fileID: 1549068954}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
+--- !u!114 &1549069126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 187
+  indentLevel: 0
+  description: +10 to academicAbility
+  targetObject: {fileID: 1022661868}
+  targetComponentAssemblyName: ActivityScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ActivityScript
+  targetMethod: Study
+  targetMethodText: 'Study (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1549069127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04659f7200983fe40b49cc144086844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 189
+  indentLevel: 0
+  soundClip:
+  - {fileID: 8300000, guid: 8b965a8522bbda44ba23d5b88a397014, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &1549069128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 191
+  indentLevel: 0
+  description: -10 to stress, +10 to energy
+  targetObject: {fileID: 1022661868}
+  targetComponentAssemblyName: ActivityScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ActivityScript
+  targetMethod: Relax
+  targetMethodText: 'Relax (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1549069129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04659f7200983fe40b49cc144086844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 190
+  indentLevel: 0
+  soundClip:
+  - {fileID: 8300000, guid: 8b965a8522bbda44ba23d5b88a397014, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1619154200
 GameObject:
   m_ObjectHideFlags: 0

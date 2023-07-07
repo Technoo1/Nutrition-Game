@@ -275,6 +275,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103525673}
   m_CullTransparentMesh: 1
+--- !u!1 &154436300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154436302}
+  - component: {fileID: 154436301}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &154436301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154436300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa83d127ce3c3cc44ac7cdaf12c07bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  stress: 10
+  energy: 10
+  academicAbilty: 10
+  budget: 50
+--- !u!4 &154436302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154436300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 709.14075, y: 370.3627, z: 829.1988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455804884
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,11 +638,9 @@ GameObject:
   - component: {fileID: 708041570}
   - component: {fileID: 708041569}
   - component: {fileID: 708041568}
-  - component: {fileID: 708041566}
   - component: {fileID: 708041565}
   - component: {fileID: 708041564}
   - component: {fileID: 708041563}
-  - component: {fileID: 708041562}
   - component: {fileID: 708041561}
   - component: {fileID: 708041560}
   - component: {fileID: 708041559}
@@ -667,6 +714,12 @@ GameObject:
   - component: {fileID: 708041642}
   - component: {fileID: 708041641}
   - component: {fileID: 708041651}
+  - component: {fileID: 708041654}
+  - component: {fileID: 708041653}
+  - component: {fileID: 708041652}
+  - component: {fileID: 708041657}
+  - component: {fileID: 708041656}
+  - component: {fileID: 708041655}
   m_Layer: 0
   m_Name: FlowchartNight
   m_TagString: Untagged
@@ -841,7 +894,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 308.91696
     y: 131.83885
-    width: 104
+    width: 104.7945
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5527,33 +5580,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &708041562
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708041497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 92
-  indentLevel: 0
-  storyText: '*relaxes*'
-  description: 
-  character: {fileID: 530925211}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &708041563
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5623,33 +5649,6 @@ MonoBehaviour:
   itemId: 89
   indentLevel: 0
   storyText: '*cooks and eats a meal*'
-  description: 
-  character: {fileID: 530925211}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &708041566
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708041497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 88
-  indentLevel: 0
-  storyText: '*studies*'
   description: 
   character: {fileID: 530925211}
   portrait: {fileID: 0}
@@ -5803,7 +5802,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.18216
     y: -101.47658
-    width: 151
+    width: 152.28307
     height: 40
   tint: {r: 1, g: 0.572327, b: 0.7979817, a: 1}
   useCustomTint: 1
@@ -5863,7 +5862,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.34082
     y: -7.742617
-    width: 103
+    width: 103.881256
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5899,9 +5898,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 633.7429
-    y: -3.360611
-    width: 81
+    x: 652.92114
+    y: -6.100335
+    width: 81.963455
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5915,7 +5914,9 @@ MonoBehaviour:
   - {fileID: 708041508}
   - {fileID: 708041507}
   - {fileID: 708041532}
-  - {fileID: 708041562}
+  - {fileID: 708041657}
+  - {fileID: 708041656}
+  - {fileID: 708041655}
   - {fileID: 708041531}
   - {fileID: 708041499}
   - {fileID: 708041530}
@@ -5940,7 +5941,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 313.01984
     y: 16.2138
-    width: 96
+    width: 96.575325
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5978,7 +5979,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.66713
     y: -0.7607832
-    width: 102
+    width: 102.96802
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6016,7 +6017,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -4.814662
     y: -0.68022823
-    width: 83
+    width: 83.78995
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6030,7 +6031,9 @@ MonoBehaviour:
   - {fileID: 708041521}
   - {fileID: 708041523}
   - {fileID: 708041552}
-  - {fileID: 708041566}
+  - {fileID: 708041654}
+  - {fileID: 708041653}
+  - {fileID: 708041652}
   - {fileID: 708041557}
   - {fileID: 708041503}
   - {fileID: 708041556}
@@ -6090,7 +6093,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.10648
     y: -192.64175
-    width: 110
+    width: 109.36071
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -6121,11 +6124,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 137.7194, y: 234.82109}
+  scrollPos: {x: 579.7587, y: 525.9468}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 313
-  zoom: 1
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -6133,8 +6136,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 708041573}
-  selectedCommands: []
+  - {fileID: 708041576}
+  selectedCommands:
+  - {fileID: 708041655}
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -6966,6 +6970,153 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &708041652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 191
+  indentLevel: 0
+  description: +10 to academicAbility
+  targetObject: {fileID: 1634012165}
+  targetComponentAssemblyName: ActivityScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ActivityScript
+  targetMethod: Study
+  targetMethodText: 'Study (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &708041653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04659f7200983fe40b49cc144086844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 190
+  indentLevel: 0
+  soundClip:
+  - {fileID: 8300000, guid: 8b965a8522bbda44ba23d5b88a397014, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &708041654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 187
+  indentLevel: 0
+  storyText: This was a productive study session. I feel like my academic ability
+    has improved!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &708041655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 194
+  indentLevel: 0
+  description: -10 to stress, +10 to energy
+  targetObject: {fileID: 1634012165}
+  targetComponentAssemblyName: ActivityScript, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ActivityScript
+  targetMethod: Relax
+  targetMethodText: 'Relax (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &708041656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04659f7200983fe40b49cc144086844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 193
+  indentLevel: 0
+  soundClip:
+  - {fileID: 8300000, guid: 8b965a8522bbda44ba23d5b88a397014, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &708041657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 192
+  indentLevel: 0
+  storyText: Ahh... I feel way less stressed. I have a lot of energy now as well!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &735263075
 GameObject:
   m_ObjectHideFlags: 1
@@ -7347,6 +7498,7 @@ GameObject:
   - component: {fileID: 1634012168}
   - component: {fileID: 1634012167}
   - component: {fileID: 1634012166}
+  - component: {fileID: 1634012170}
   m_Layer: 5
   m_Name: PlayerView
   m_TagString: Untagged
@@ -7438,6 +7590,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1634012170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634012165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93bec59e0e4ed1547a90bf724c47feb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1850576514
 GameObject:
   m_ObjectHideFlags: 0
