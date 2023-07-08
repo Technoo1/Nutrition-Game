@@ -3664,7 +3664,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 320.6815
     y: 224.77982
-    width: 106.24997
+    width: 104.02295
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5840,7 +5840,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.18216
     y: -100.30011
-    width: 155.20828
+    width: 149.99994
     height: 40
   tint: {r: 1, g: 0.572327, b: 0.7979817, a: 1}
   useCustomTint: 1
@@ -5902,7 +5902,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 552.0627
     y: 43.699738
-    width: 136.45828
+    width: 130.45972
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5934,7 +5934,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 909.56903
     y: -90.00043
-    width: 82.29165
+    width: 81.03446
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5975,7 +5975,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 63.5495
     y: -33.701958
-    width: 132.29163
+    width: 127.011444
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6008,7 +6008,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -255.40266
     y: -73.62138
-    width: 84.374985
+    width: 82.18388
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6084,7 +6084,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.10648
     y: -192.64175
-    width: 112.49997
+    width: 108.62065
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -6117,11 +6117,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 519.5311, y: 543.0508}
+  scrollPos: {x: 627.3275, y: 598.50037}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 313
-  zoom: 0.64000034
+  zoom: 0.5800004
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -6129,9 +6129,8 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 708041695}
-  selectedCommands:
-  - {fileID: 708041704}
+  - {fileID: 708041579}
+  selectedCommands: []
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -6947,7 +6946,7 @@ MonoBehaviour:
   storyText: This was a productive study session. I feel like my academic ability
     has improved!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7020,7 +7019,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Ahh... I feel way less stressed. I have a lot of energy now as well!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7555,7 +7554,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 375.3473
     y: 48.23299
-    width: 126.041626
+    width: 123.56317
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8215,7 +8214,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 291.3664
     y: 9.909043
-    width: 126.041626
+    width: 122.41374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9355,7 +9354,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.7801
     y: 58.047775
-    width: 132.29163
+    width: 128.16086
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9865,7 +9864,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 545.8787
     y: -45.68313
-    width: 136.45828
+    width: 129.31029
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10240,7 +10239,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: Okay, I still have some time to...
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -10531,7 +10530,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &708041704
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10559,7 +10558,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &708041705
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10587,7 +10586,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &708041706
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -11348,7 +11347,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 385, y: -10}
+  m_AnchoredPosition: {x: 459.76, y: -10}
   m_SizeDelta: {x: 1300, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853565081
@@ -11586,8 +11585,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 847c239487b70c446bbf157c432c902b, type: 3}
   - {fileID: 21300000, guid: 03f29604eeca0c84587daa9b7aa433d5, type: 3}
   - {fileID: 21300000, guid: 265009e7516ab434ebf054eaeb1e9360, type: 3}
-  - {fileID: 21300000, guid: a7e0d2fec81595e4ba89ac9ff4e89de4, type: 3}
-  - {fileID: 21300000, guid: eaf663d2d6452ad4ca2254568dca8a3b, type: 3}
+  - {fileID: 21300000, guid: 9ccb7cf34b005fb4b93522ea8f504ec9, type: 3}
+  - {fileID: 21300000, guid: 97d1818dfc14a2849b0da906de4ef244, type: 3}
+  - {fileID: 21300000, guid: 5f1f70c8d716c474bb64b48534af5ec3, type: 3}
+  - {fileID: 21300000, guid: 5216951a417e46e4fbb25d8cde17ab32, type: 3}
+  - {fileID: 21300000, guid: 0bf3713459b4f3e4d85f75bd40ec29bd, type: 3}
+  - {fileID: 21300000, guid: 9ba796aa660e30540a5935a06a7b99c8, type: 3}
+  - {fileID: 21300000, guid: 599a9e5c478ca6948bc4d894f0152816, type: 3}
+  - {fileID: 21300000, guid: 9371953fa1d3bf646a3b0b8820e45f9f, type: 3}
+  - {fileID: 21300000, guid: fd3acc489906f8d4299f724658af35eb, type: 3}
+  - {fileID: 21300000, guid: 36684b2b62c85614499bd2b6f0996c72, type: 3}
+  - {fileID: 21300000, guid: 1d5c2f62c16d6994fb1d227ede4117f0, type: 3}
   image: {fileID: 1046890586}
   fadeDuration: 0.2
   backgroundImageValue: 0
@@ -11950,6 +11958,7 @@ GameObject:
   - component: {fileID: 1180570815}
   - component: {fileID: 1180570816}
   - component: {fileID: 1180570817}
+  - component: {fileID: 1180570818}
   m_Layer: 0
   m_Name: LeftoversFlowchart
   m_TagString: Untagged
@@ -12176,8 +12185,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1180570720}
-  selectedCommands: []
+  - {fileID: 1180570786}
+  selectedCommands:
+  - {fileID: 1180570784}
   variables:
   - {fileID: 1180570719}
   - {fileID: 1180570718}
@@ -12229,7 +12239,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -116.870026
-    y: 306.1754
+    y: 304.35724
     width: 100.90911
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -12258,7 +12268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 1
-  text: healthy meal 1 ({$healthy1} leftovers remaining)
+  text: Salad ({$healthy1} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570723}
   hideIfVisited: 0
@@ -12526,7 +12536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 1
-  text: healthy meal 3 ({$healthy3} leftovers remaining)
+  text: Pumpkin Soup ({$healthy3} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570776}
   hideIfVisited: 0
@@ -12551,7 +12561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 1
-  text: mid meal 1 ({$mid1} leftovers remaining)
+  text: Spaghetti ({$mid1} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570771}
   hideIfVisited: 0
@@ -12576,7 +12586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 1
-  text: mid meal 2 ({$mid2} leftovers remaining)
+  text: Roast Chicken ({$mid2} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570766}
   hideIfVisited: 0
@@ -12601,7 +12611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 1
-  text: mid meal 3 ({$mid3} leftovers remaining)
+  text: Steak Meal ({$mid3} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570761}
   hideIfVisited: 0
@@ -12626,7 +12636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 1
-  text: unhealthy meal 1 ({$unhealthy1} leftovers remaining)
+  text: Pizza ({$unhealthy1} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570756}
   hideIfVisited: 0
@@ -12651,7 +12661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 1
-  text: unhealthy meal 2 ({$unhealthy2} leftovers remaining)
+  text: Fast Food ({$unhealthy2} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570751}
   hideIfVisited: 0
@@ -12676,7 +12686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 1
-  text: unhealthy meal 3 ({$unhealthy3} leftovers remaining)
+  text: Pancakes ({$unhealthy3} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570746}
   hideIfVisited: 0
@@ -12701,7 +12711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 1
-  text: healthy meal 2 ({$healthy2} leftovers remaining)
+  text: Fish ({$healthy2} leftovers remaining)
   description: 
   targetBlock: {fileID: 1180570781}
   hideIfVisited: 0
@@ -12778,7 +12788,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -13037,7 +13047,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -13296,7 +13306,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -13555,7 +13565,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -13814,7 +13824,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -14073,7 +14083,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -14332,7 +14342,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -14591,7 +14601,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -14768,8 +14778,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 78.47255
-    y: 310.4776
+    x: 89.38165
+    y: 314.11395
     width: 102.12123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -14973,7 +14983,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: That meal filled me with energy!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -15026,7 +15036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 590.6302
+    x: 592.44836
     y: 584.2985
     width: 86.36365
     height: 40
@@ -15040,6 +15050,7 @@ MonoBehaviour:
   - {fileID: 1180570816}
   - {fileID: 1180570785}
   - {fileID: 1180570784}
+  - {fileID: 1180570818}
   - {fileID: 1180570783}
   - {fileID: 1180570782}
   - {fileID: 1180570815}
@@ -15110,7 +15121,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I eat this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -18448,7 +18459,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1180570817
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -18474,6 +18485,24 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1180570818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180570710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04659f7200983fe40b49cc144086844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 399
+  indentLevel: 0
+  soundClip:
+  - {fileID: 8300000, guid: 8b965a8522bbda44ba23d5b88a397014, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1216872935
 GameObject:
   m_ObjectHideFlags: 0
@@ -19668,7 +19697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364, y: -12}
+  m_AnchoredPosition: {x: -491.7, y: -12}
   m_SizeDelta: {x: 1300, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668136915
@@ -21065,6 +21094,8 @@ GameObject:
   - component: {fileID: 1977058492}
   - component: {fileID: 1977058495}
   - component: {fileID: 1977058496}
+  - component: {fileID: 1977058497}
+  - component: {fileID: 1977058498}
   m_Layer: 0
   m_Name: CookBookFlowchart
   m_TagString: Untagged
@@ -21088,7 +21119,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -299.20578
     y: 235.76562
-    width: 103.12498
+    width: 99.99999
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21118,7 +21149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 211
   indentLevel: 0
-  text: unhealthy 3
+  text: Pancakes
   description: 
   targetBlock: {fileID: 1977058441}
   hideIfVisited: 0
@@ -21143,7 +21174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 210
   indentLevel: 0
-  text: unhealthy 2
+  text: Fast Food
   description: 
   targetBlock: {fileID: 1977058448}
   hideIfVisited: 0
@@ -21168,7 +21199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 209
   indentLevel: 0
-  text: unhealthy 1
+  text: Pizza
   description: 
   targetBlock: {fileID: 1977058455}
   hideIfVisited: 0
@@ -21193,7 +21224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 208
   indentLevel: 0
-  text: mid 3
+  text: Steak Meal
   description: 
   targetBlock: {fileID: 1977058462}
   hideIfVisited: 0
@@ -21218,7 +21249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 207
   indentLevel: 0
-  text: mid 2
+  text: Roast Chicken
   description: 
   targetBlock: {fileID: 1977058469}
   hideIfVisited: 0
@@ -21243,7 +21274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 206
   indentLevel: 0
-  text: mid 1
+  text: Spaghetti
   description: 
   targetBlock: {fileID: 1977058476}
   hideIfVisited: 0
@@ -21268,7 +21299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 205
   indentLevel: 0
-  text: healthy 3
+  text: Pumpkin Soup
   description: 
   targetBlock: {fileID: 1977058483}
   hideIfVisited: 0
@@ -21293,7 +21324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 204
   indentLevel: 0
-  text: healthy 2
+  text: Fish
   description: 
   targetBlock: {fileID: 1977058490}
   hideIfVisited: 0
@@ -21318,7 +21349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 196
   indentLevel: 0
-  text: healthy 1
+  text: Salad
   description: 
   targetBlock: {fileID: 1977058379}
   hideIfVisited: 0
@@ -21360,7 +21391,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 359.68738
     y: 88.03981
-    width: 142.7083
+    width: 137.1212
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21397,11 +21428,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 357.43512, y: 311.56665}
+  scrollPos: {x: 253.25912, y: 164.62532}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.6400003
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -21475,7 +21506,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: That meal filled me with energy!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -21506,8 +21537,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: KitchenMidday
-  targetMethodText: 'KitchenMidday (): Void'
+  targetMethod: KitchenNight
+  targetMethodText: 'KitchenNight (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -21720,9 +21751,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 373.22043
+    x: 372.08408
     y: 450.93848
-    width: 88.54166
+    width: 86.36363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21735,10 +21766,12 @@ MonoBehaviour:
   - {fileID: 1977058491}
   - {fileID: 1977058494}
   - {fileID: 1977058420}
+  - {fileID: 1977058498}
   - {fileID: 1977058496}
   - {fileID: 1977058393}
   - {fileID: 1977058493}
   - {fileID: 1977058495}
+  - {fileID: 1977058497}
   - {fileID: 1977058492}
   suppressAllAutoSelections: 0
 --- !u!114 &1977058427
@@ -21782,7 +21815,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -21813,8 +21846,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Healthy1Salad
+  targetMethodText: 'Healthy1Salad (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -22476,7 +22509,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -22507,8 +22540,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Unhealthy3Pancakes
+  targetMethodText: 'Unhealthy3Pancakes (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -22835,7 +22868,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1086.5309
     y: 246.41956
-    width: 119.79164
+    width: 115.90908
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22917,7 +22950,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -22948,8 +22981,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Unhealthy2FastFood
+  targetMethodText: 'Unhealthy2FastFood (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -23276,7 +23309,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 871.21844
     y: 247.98206
-    width: 118.74997
+    width: 114.39393
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23358,7 +23391,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -23389,8 +23422,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Unhealthy1Pizza
+  targetMethodText: 'Unhealthy1Pizza (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -23717,7 +23750,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 675.9492
     y: 244.6954
-    width: 117.708305
+    width: 113.63635
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23799,7 +23832,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -23830,8 +23863,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Mid3SteakMeal
+  targetMethodText: 'Mid3SteakMeal (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -24156,9 +24189,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 541.8867
-    y: 243.1329
-    width: 82.29166
+    x: 542.8867
+    y: 242.1329
+    width: 81.0606
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24240,7 +24273,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -24271,8 +24304,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Mid2RoastChicken
+  targetMethodText: 'Mid2RoastChicken (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -24599,7 +24632,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 387.5809
     y: 245.45055
-    width: 81.249985
+    width: 79.54545
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24681,7 +24714,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -24712,8 +24745,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Mid1Spaghetti
+  targetMethodText: 'Mid1Spaghetti (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -25038,9 +25071,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 232.3559
+    x: 236.9184
     y: 231.52649
-    width: 80.20832
+    width: 78.78787
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25122,7 +25155,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25153,8 +25186,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Healthy3PumpkinSoup
+  targetMethodText: 'Healthy3PumpkinSoup (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -25481,7 +25514,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 82.64435
     y: 230.57707
-    width: 105.20831
+    width: 102.27272
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -25563,7 +25596,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Should I cook this?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -25594,8 +25627,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BackgroundSwapper
-  targetMethod: Recipe1
-  targetMethodText: 'Recipe1 (): Void'
+  targetMethod: Healthy2Fish
+  targetMethodText: 'Healthy2Fish (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -25922,7 +25955,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -91.16063
     y: 240.05638
-    width: 104.16664
+    width: 100.75757
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26487,9 +26520,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 322
   indentLevel: 1
-  storyText: Great! I know have 3 extra leftovers for later.
+  storyText: Great! I now have 3 extra leftovers for later.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530925211}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26652,6 +26685,42 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1977058497
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977058378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04659f7200983fe40b49cc144086844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 324
+  indentLevel: 1
+  soundClip:
+  - {fileID: 8300000, guid: 8b965a8522bbda44ba23d5b88a397014, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &1977058498
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977058378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04659f7200983fe40b49cc144086844b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 325
+  indentLevel: 1
+  soundClip:
+  - {fileID: 8300000, guid: 8b965a8522bbda44ba23d5b88a397014, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1986911782
 GameObject:
   m_ObjectHideFlags: 0

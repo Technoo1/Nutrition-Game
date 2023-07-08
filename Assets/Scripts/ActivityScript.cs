@@ -76,6 +76,7 @@ public class ActivityScript : MonoBehaviour
             case "healthy1":
                 GameManager.instance.energy += 10;
                 GameManager.instance.health += 10;
+                GameManager.instance.stress -= 10;
                 GameManager.instance.hasEaten = true;
                 IntegerVariable healthy1 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy1");
                 healthy1.Value -= 1;
@@ -84,6 +85,7 @@ public class ActivityScript : MonoBehaviour
             case "healthy2":
                 GameManager.instance.energy += 8;
                 GameManager.instance.health += 12;
+                GameManager.instance.stress -= 10;
                 GameManager.instance.hasEaten = true;
                 IntegerVariable healthy2 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy2");
                 healthy2.Value -= 1;
@@ -92,6 +94,7 @@ public class ActivityScript : MonoBehaviour
             case "healthy3":
                 GameManager.instance.energy += 12;
                 GameManager.instance.health += 8;
+                GameManager.instance.stress -= 10;
                 GameManager.instance.hasEaten = true;
                 IntegerVariable healthy3 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy3");
                 healthy3.Value -= 1;
@@ -100,6 +103,7 @@ public class ActivityScript : MonoBehaviour
             case "mid1":
                 GameManager.instance.energy += 7;
                 GameManager.instance.health += 7;
+                GameManager.instance.stress -= 7;
                 GameManager.instance.hasEaten = true;
                 IntegerVariable mid1 = leftoversFlowchart.GetVariable<IntegerVariable>("mid1");
                 mid1.Value -= 1;
@@ -108,6 +112,7 @@ public class ActivityScript : MonoBehaviour
             case "mid2":
                 GameManager.instance.energy += 9;
                 GameManager.instance.health += 5;
+                GameManager.instance.stress -= 7;
                 GameManager.instance.hasEaten = true;
                 IntegerVariable mid2 = leftoversFlowchart.GetVariable<IntegerVariable>("mid2");
                 mid2.Value -= 1;
@@ -116,6 +121,7 @@ public class ActivityScript : MonoBehaviour
             case "mid3":
                 GameManager.instance.energy += 5;
                 GameManager.instance.health += 9;
+                GameManager.instance.stress -= 7;
                 GameManager.instance.hasEaten = true;
                 IntegerVariable mid3 = leftoversFlowchart.GetVariable<IntegerVariable>("mid3");
                 mid3.Value -= 1;
@@ -165,6 +171,7 @@ public class ActivityScript : MonoBehaviour
                 {
                     GameManager.instance.energy += 10;
                     GameManager.instance.health += 10;
+                    GameManager.instance.stress -= 10;
                     GameManager.instance.hasEaten = true;
                     GameManager.instance.budget -= 10 * sizeOfMeal.Value;
                 }
@@ -181,6 +188,7 @@ public class ActivityScript : MonoBehaviour
                 {
                     GameManager.instance.energy += 8;
                     GameManager.instance.health += 12;
+                    GameManager.instance.stress -= 10;
                     GameManager.instance.hasEaten = true;
                     GameManager.instance.budget -= 10 * sizeOfMeal.Value;
                 }
@@ -197,6 +205,7 @@ public class ActivityScript : MonoBehaviour
                 {
                     GameManager.instance.energy += 12;
                     GameManager.instance.health += 8;
+                    GameManager.instance.stress -= 10;
                     GameManager.instance.hasEaten = true;
                     GameManager.instance.budget -= 10 * sizeOfMeal.Value;
                 }
@@ -213,6 +222,7 @@ public class ActivityScript : MonoBehaviour
                 {
                     GameManager.instance.energy += 7;
                     GameManager.instance.health += 7;
+                    GameManager.instance.stress -= 7;
                     GameManager.instance.hasEaten = true;
                     GameManager.instance.budget -= 7 * sizeOfMeal.Value;
                 }
@@ -229,6 +239,7 @@ public class ActivityScript : MonoBehaviour
                 {
                     GameManager.instance.energy += 9;
                     GameManager.instance.health += 5;
+                    GameManager.instance.stress -= 7;
                     GameManager.instance.hasEaten = true;
                     GameManager.instance.budget -= 7 * sizeOfMeal.Value;
                 }
@@ -245,6 +256,7 @@ public class ActivityScript : MonoBehaviour
                 {
                     GameManager.instance.energy += 5;
                     GameManager.instance.health += 9;
+                    GameManager.instance.stress -= 7;
                     GameManager.instance.hasEaten = true;
                     GameManager.instance.budget -= 7 * sizeOfMeal.Value;
                 }

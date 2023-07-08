@@ -87,9 +87,54 @@ public class BackgroundSwapper : MonoBehaviour
         backgroundImageValue = 8; // change this to the position of the image you're switching to in the list
         StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
     }
-    public void Recipe1() // called by the dialogue
+    public void Healthy1Salad() // called by the dialogue
     {
         backgroundImageValue = 9; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Healthy2Fish() // called by the dialogue
+    {
+        backgroundImageValue = 10; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Healthy3PumpkinSoup() // called by the dialogue
+    {
+        backgroundImageValue = 11; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Mid1Spaghetti() // called by the dialogue
+    {
+        backgroundImageValue = 12; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Mid2RoastChicken() // called by the dialogue
+    {
+        backgroundImageValue = 13; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Mid3SteakMeal() // called by the dialogue
+    {
+        backgroundImageValue = 14; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Unhealthy1Pizza() // called by the dialogue
+    {
+        backgroundImageValue = 15; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Unhealthy2FastFood() // called by the dialogue
+    {
+        backgroundImageValue = 16; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Unhealthy3Pancakes() // called by the dialogue
+    {
+        backgroundImageValue = 17; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void KitchenNight() // called by the dialogue
+    {
+        backgroundImageValue = 18; // change this to the position of the image you're switching to in the list
         StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
     }
 
