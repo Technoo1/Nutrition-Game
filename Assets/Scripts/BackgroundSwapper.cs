@@ -82,6 +82,16 @@ public class BackgroundSwapper : MonoBehaviour
         backgroundImageValue = 7; // change this to the position of the image you're switching to in the list
         StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
     }
+    public void CookBook() // called by the dialogue
+    {
+        backgroundImageValue = 8; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+    public void Recipe1() // called by the dialogue
+    {
+        backgroundImageValue = 9; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
 
 
     IEnumerator FadeToBlack()
