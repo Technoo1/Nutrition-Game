@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int energy = 10;
     public int academicAbilty = 10;
     public float budget = 50.00f;
+    public bool hasEaten = false;
     private void Awake()
     {
         // Ensure only one instance of the GameManager exists
