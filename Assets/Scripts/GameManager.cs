@@ -13,6 +13,19 @@ public class GameManager : MonoBehaviour
     public int academicAbilty = 10;
     public float budget = 50.00f;
     public bool hasEaten = false;
+
+    public int healthy1 = 0;
+    public int healthy2 = 0;
+    public int healthy3 = 0;
+    public int mid1 = 0;
+    public int mid2 = 0;
+    public int mid3 = 0;
+    public int unhealthy1 = 0;
+    public int unhealthy2 = 0;
+    public int unhealthy3 = 0;
+
+    public Dictionary<string, int> meals = new Dictionary<string, int>();
+
     private void Awake()
     {
         // Ensure only one instance of the GameManager exists
@@ -28,19 +41,5 @@ public class GameManager : MonoBehaviour
     }
 
     // Add your methods and functionality here
-    public void Study()
-    {
-        GameManager.instance.academicAbilty += 10;
-        Debug.Log("+10 to academic ability");
-        Debug.Log("Your academic ability is: " + academicAbilty);
-    }
-    public void Relax()
-    {
-        GameManager.instance.stress -= 10;
-        GameManager.instance.energy += 10;
-        Debug.Log("-10 to stress");
-        Debug.Log("Your stress is " + stress);
-        Debug.Log("+10 to energy");
-        Debug.Log("Your energy is " + energy);
-    }
+
 }
