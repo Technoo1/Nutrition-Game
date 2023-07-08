@@ -7,5 +7,8 @@ public class QuitManager_Alex : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("quit");
+
+        Time.timeScale = 1;
     }
 }
