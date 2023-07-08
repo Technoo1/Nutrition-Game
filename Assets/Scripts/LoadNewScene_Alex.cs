@@ -7,8 +7,14 @@ public class LoadNewScene : MonoBehaviour
 {
     public int loadlevel;
 
+    private IEnumerator LoadSceneCoroutine()
+    {
+        yield return new WaitForSeconds(0.6f);
+        SceneManager.LoadScene(loadlevel);
+    }
+
     public void loadSceneButton()
     {
-        SceneManager.LoadScene(loadlevel);
+        StartCoroutine(LoadSceneCoroutine());
     }
 }
