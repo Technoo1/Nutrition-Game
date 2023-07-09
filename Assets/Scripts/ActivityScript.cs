@@ -14,6 +14,7 @@ public class ActivityScript : MonoBehaviour
     public string chosenMeal;
     public string chosenLeftovers;
     public string chosenSnack;
+    public int scoreSummary;
 
     void Start()
     {
@@ -71,6 +72,24 @@ public class ActivityScript : MonoBehaviour
         GameManager.instance.stress += 10;
         GameManager.instance.energy -= 10;
         GameManager.instance.health -= 10;
+    }
+
+    public void ScoreSummary()
+    {
+        IntegerVariable score = dayFlowchart.GetVariable<IntegerVariable>("ScoreSummary");
+        scoreSummary = GameManager.instance.academicAbilty + GameManager.instance.health - GameManager.instance.stress + GameManager.instance.energy;
+        score.Value = scoreSummary;
+
+        if (scoreSummary >= 110)
+        {
+         
+            Debug.Log("You Win");
+        }
+        else if (scoreSummary < 110)
+        {
+            Debug.Log("You Lose");
+        }
+               
     }
 
     public void EatLeftovers()

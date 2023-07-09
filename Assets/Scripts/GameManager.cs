@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     public string chocolateBar;
     public string cupNoodles;
 
+    public int finalScore;
+
 
     public Dictionary<string, int> meals = new Dictionary<string, int>();
 
@@ -48,6 +50,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Add your methods and functionality here
+    // Add your methods and functionality her
 
 }
