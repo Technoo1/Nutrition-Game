@@ -5,6 +5,7 @@ using TMPro;
 
 public class StatDisplay : MonoBehaviour
 {
+    public TextMeshProUGUI currentDay;
     public TextMeshProUGUI money;
     public TextMeshProUGUI health;
     public TextMeshProUGUI stress;
@@ -20,6 +21,7 @@ public class StatDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentDay.text = "Day " + GameManager.instance.currentDay;
         money.text = "Money: $" + GameManager.instance.budget;
         health.text = "Health: " + GameManager.instance.health;
         stress.text = "Stress: " + GameManager.instance.stress;

@@ -22,6 +22,8 @@ public class ActivityScript : MonoBehaviour
     }
     public void UpdateVariables()
     {
+        IntegerVariable currentDay = dayFlowchart.GetVariable<IntegerVariable>("CurrentDay");
+        currentDay.Value = GameManager.instance.currentDay;
         IntegerVariable healthy1 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy1");
         healthy1.Value = GameManager.instance.healthy1;
         IntegerVariable healthy2 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy2");
@@ -41,6 +43,10 @@ public class ActivityScript : MonoBehaviour
         IntegerVariable unhealthy3 = leftoversFlowchart.GetVariable<IntegerVariable>("unhealthy3");
         unhealthy3.Value = GameManager.instance.unhealthy3;
         Debug.Log("variables updated");
+    }
+    public void EndOfNight()
+    {
+        GameManager.instance.currentDay += 1;
     }
     public void Study()
     {

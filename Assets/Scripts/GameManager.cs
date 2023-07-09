@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     // Add your variables here
+    public int currentDay = 1;
     public int health = 10;
     public int stress = 10;
     public int energy = 10;
