@@ -10,8 +10,10 @@ public class ActivityScript : MonoBehaviour
     public Flowchart dayFlowchart;
     public Flowchart cookBookFlowchart;
     public Flowchart leftoversFlowchart;
+    public Flowchart vendingMachineFlowChart;
     public string chosenMeal;
     public string chosenLeftovers;
+    public string chosenSnack;
 
     void Start()
     {
@@ -19,6 +21,7 @@ public class ActivityScript : MonoBehaviour
         dayFlowchart = GameObject.Find("DayFlowchart").GetComponent<Flowchart>();
         cookBookFlowchart = GameObject.Find("CookBookFlowchart").GetComponent<Flowchart>();
         leftoversFlowchart = GameObject.Find("LeftoversFlowchart").GetComponent<Flowchart>();
+        vendingMachineFlowChart = GameObject.Find("VendingMachineFlowChart").GetComponent<Flowchart>();
     }
     public void UpdateVariables()
     {
@@ -326,6 +329,47 @@ public class ActivityScript : MonoBehaviour
                 Debug.Log("something went wrong. chosenMeal = " + chosenMeal);
                 break;
         }
+
+    }
+    public void VendingMachineSnack()
+    {
+        StringVariable snackSelected = vendingMachineFlowChart.GetVariable<StringVariable>("Snack");
+        chosenSnack = snackSelected.Value;
+        Debug.Log("Snackselected: " + chosenSnack);
+
+        switch (chosenSnack)
+        {
+            case "PacketOfChips":
+                GameManager.instance.energy -= 1;
+                GameManager.instance.health += 1;
+                GameManager.instance.budget -= 2;
+                break;
+            case "Lollies":
+                GameManager.instance.energy -= 2;
+                GameManager.instance.health += 1;
+                GameManager.instance.budget -= 2;
+                GameManager.instance.stress += 1;
+                break;
+            case "EnergyDrink":
+                GameManager.instance.energy += 5;
+                GameManager.instance.health -= 5;
+                GameManager.instance.budget -= 5;
+                GameManager.instance.stress += 4;
+                break;
+            case "ChocolateBar":
+                GameManager.instance.energy += 2;
+                GameManager.instance.health += 1;
+                GameManager.instance.budget -= 3;
+                break;
+            case "CupOfNoodles":
+                GameManager.instance.energy += 1;
+                GameManager.instance.health -= 5;
+                GameManager.instance.health -= 0;
+                break;
+                    
+
+        }
+
 
     }
 }
