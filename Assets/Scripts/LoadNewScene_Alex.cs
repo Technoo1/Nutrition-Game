@@ -9,6 +9,6 @@ public class LoadNewScene : MonoBehaviour
 
     public void loadSceneButton()
     {
-        SceneManager.LoadScene(loadlevel);
+        SceneManager.LoadScene("MorningScene");
     }
 }

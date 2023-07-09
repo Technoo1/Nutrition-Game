@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -843,7 +843,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 286.91696
     y: 131.83885
-    width: 172
+    width: 172.40582
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5824,7 +5824,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.18216
     y: -101.47658
-    width: 175
+    width: 173.81279
     height: 40
   tint: {r: 1, g: 0.572327, b: 0.7979817, a: 1}
   useCustomTint: 1
@@ -5884,7 +5884,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 471.34082
     y: 1.2573829
-    width: 86
+    width: 85.17409
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5922,7 +5922,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 623.7429
     y: -2.360611
-    width: 132
+    width: 131.60388
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5961,7 +5961,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 301.01984
     y: 7.2138004
-    width: 139
+    width: 138.6387
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5999,7 +5999,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 115.66713
     y: -1.7607832
-    width: 122
+    width: 121.75514
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6037,7 +6037,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -80.81467
     y: -5.680228
-    width: 130
+    width: 130.19693
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6111,7 +6111,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 293.10648
     y: -194.64175
-    width: 148
+    width: 148.48746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -6142,21 +6142,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 304.17404, y: 358.04822}
+  scrollPos: {x: 285.72687, y: 365.41092}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 313
-  zoom: 1
+  zoom: 0.71075046
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 708041629}
-  selectedCommands:
-  - {fileID: 708041524}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -7239,10 +7237,10 @@ RectTransform:
   m_Father: {fileID: 1634012169}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: 0.00019836}
-  m_SizeDelta: {x: 800, y: 450.39}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1046890585
 MonoBehaviour:
@@ -7288,7 +7286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 265009e7516ab434ebf054eaeb1e9360, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4180ef261f872b24b8ed51aadebe174a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
