@@ -25,6 +25,13 @@ public class GameManager : MonoBehaviour
     public int unhealthy2 = 0;
     public int unhealthy3 = 0;
 
+    public string packetOfChips;
+    public string Lollies;
+    public string energyDrink;
+    public string chocolateBar;
+    public string cupNoodles;
+
+
     public Dictionary<string, int> meals = new Dictionary<string, int>();
 
     private void Awake()
