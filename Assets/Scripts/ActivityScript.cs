@@ -333,7 +333,7 @@ public class ActivityScript : MonoBehaviour
     }
     public void VendingMachineSnack()
     {
-        StringVariable snackSelected = leftoversFlowchart.GetVariable<StringVariable>("Snack");
+        StringVariable snackSelected = vendingMachineFlowChart.GetVariable<StringVariable>("Snack");
         chosenSnack = snackSelected.Value;
         Debug.Log("Snackselected: " + chosenSnack);
 
