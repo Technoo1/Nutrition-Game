@@ -5821,7 +5821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 453.3066, y: 3.3180318}
+  scrollPos: {x: 173.30649, y: 10.590763}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -13351,6 +13351,7 @@ GameObject:
   - component: {fileID: 1549069212}
   - component: {fileID: 1549069213}
   - component: {fileID: 1549069217}
+  - component: {fileID: 1549069218}
   m_Layer: 0
   m_Name: DayFlowchart
   m_TagString: Untagged
@@ -13422,7 +13423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 368.78717, y: 404.34647}
+  scrollPos: {x: 367.22467, y: 404.34647}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 446
@@ -13433,8 +13434,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1549069026}
+  selectedCommands:
+  - {fileID: 1549069021}
   variables:
   - {fileID: 1549069124}
   - {fileID: 1549069123}
@@ -13442,6 +13445,7 @@ MonoBehaviour:
   - {fileID: 1549069171}
   - {fileID: 1549069188}
   - {fileID: 1549069212}
+  - {fileID: 1549069218}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -15045,7 +15049,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  text: Maybe I should prepare some food for later.
+  text: Maybe I should prepare some food for later. (Makes 3 meals for the price
+    of 2)
   description: 
   targetBlock: {fileID: 1549069157}
   hideIfVisited: 0
@@ -23256,6 +23261,21 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1549069218
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705fa1ac97df74e3a84ff952ffd923f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: Budget
+  value: 0
 --- !u!1 &1586830161
 GameObject:
   m_ObjectHideFlags: 0
@@ -27667,7 +27687,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -300.76828
     y: 237.25816
-    width: 103.73134
+    width: 102.57734
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27939,7 +27959,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 359.68738
     y: 88.03981
-    width: 144.02985
+    width: 141.75261
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27976,11 +27996,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 520.65173, y: 108.00159}
+  scrollPos: {x: 360.88196, y: 119.65699}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 481.66666
-  zoom: 0.6700001
+  zoom: 0.9699997
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -27988,7 +28008,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1977058426}
+  - {fileID: 1977058390}
   selectedCommands: []
   variables:
   - {fileID: 1977058425}
@@ -28302,7 +28322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 381.03293
     y: 455.62598
-    width: 88.80597
+    width: 88.14435
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29417,7 +29437,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1086.5309
     y: 246.41956
-    width: 120.14925
+    width: 119.07219
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -29858,7 +29878,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 871.21844
     y: 247.98206
-    width: 120.14925
+    width: 118.04126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30299,7 +30319,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 674.3867
     y: 244.6954
-    width: 118.65671
+    width: 117.01033
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30740,7 +30760,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 541.8867
     y: 243.1329
-    width: 81.34328
+    width: 81.95877
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -31181,7 +31201,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 387.5809
     y: 245.45055
-    width: 81.34328
+    width: 80.92784
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -31622,7 +31642,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 232.3559
     y: 231.52649
-    width: 79.85074
+    width: 79.89692
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -32063,7 +32083,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 77.95685
     y: 229.01457
-    width: 105.22388
+    width: 104.63919
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -32502,9 +32522,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -91.16063
-    y: 240.05638
-    width: 105.22388
+    x: -83.94412
+    y: 226.6543
+    width: 103.60826
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
