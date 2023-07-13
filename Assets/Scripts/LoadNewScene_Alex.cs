@@ -5,10 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class LoadNewScene : MonoBehaviour
 {
-    public int loadlevel;
+    private IEnumerator LoadSceneCoroutine()
+    {
+        yield return new WaitForSeconds(0.6f);
+        SceneManager.LoadScene("MainMenu");
+
+        Debug.Log("button clicked");
+    }
 
     public void loadSceneButton()
     {
-        SceneManager.LoadScene("MorningScene");
+        StartCoroutine(LoadSceneCoroutine());
     }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
 }
