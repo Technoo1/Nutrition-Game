@@ -10,8 +10,11 @@ public class ActivityScript : MonoBehaviour
     public Flowchart dayFlowchart;
     public Flowchart cookBookFlowchart;
     public Flowchart leftoversFlowchart;
+    public Flowchart vendingMachineFlowChart;
     public string chosenMeal;
     public string chosenLeftovers;
+    public string chosenSnack;
+    public int scoreSummary;
 
     void Start()
     {
@@ -19,11 +22,14 @@ public class ActivityScript : MonoBehaviour
         dayFlowchart = GameObject.Find("DayFlowchart").GetComponent<Flowchart>();
         cookBookFlowchart = GameObject.Find("CookBookFlowchart").GetComponent<Flowchart>();
         leftoversFlowchart = GameObject.Find("LeftoversFlowchart").GetComponent<Flowchart>();
+        vendingMachineFlowChart = GameObject.Find("VendingMachineFlowChart").GetComponent<Flowchart>();
     }
     public void UpdateVariables()
     {
         IntegerVariable currentDay = dayFlowchart.GetVariable<IntegerVariable>("CurrentDay");
         currentDay.Value = GameManager.instance.currentDay;
+        FloatVariable budget = dayFlowchart.GetVariable<FloatVariable>("Budget");
+        budget.Value = GameManager.instance.budget;
         IntegerVariable healthy1 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy1");
         healthy1.Value = GameManager.instance.healthy1;
         IntegerVariable healthy2 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy2");
@@ -68,6 +74,24 @@ public class ActivityScript : MonoBehaviour
         GameManager.instance.stress += 10;
         GameManager.instance.energy -= 10;
         GameManager.instance.health -= 10;
+    }
+
+    public void ScoreSummary()
+    {
+        IntegerVariable score = dayFlowchart.GetVariable<IntegerVariable>("ScoreSummary");
+        scoreSummary = GameManager.instance.academicAbilty + GameManager.instance.health - GameManager.instance.stress + GameManager.instance.energy;
+        score.Value = scoreSummary;
+
+        if (scoreSummary >= 110)
+        {
+         
+            Debug.Log("You Win");
+        }
+        else if (scoreSummary < 110)
+        {
+            Debug.Log("You Lose");
+        }
+               
     }
 
     public void EatLeftovers()
@@ -326,6 +350,47 @@ public class ActivityScript : MonoBehaviour
                 Debug.Log("something went wrong. chosenMeal = " + chosenMeal);
                 break;
         }
+
+    }
+    public void VendingMachineSnack()
+    {
+        StringVariable snackSelected = vendingMachineFlowChart.GetVariable<StringVariable>("Snack");
+        chosenSnack = snackSelected.Value;
+        Debug.Log("Snackselected: " + chosenSnack);
+
+        switch (chosenSnack)
+        {
+            case "PacketOfChips":
+                GameManager.instance.energy -= 1;
+                GameManager.instance.health += 1;
+                GameManager.instance.budget -= 2;
+                break;
+            case "Lollies":
+                GameManager.instance.energy -= 2;
+                GameManager.instance.health += 1;
+                GameManager.instance.budget -= 2;
+                GameManager.instance.stress += 1;
+                break;
+            case "EnergyDrink":
+                GameManager.instance.energy += 5;
+                GameManager.instance.health -= 5;
+                GameManager.instance.budget -= 5;
+                GameManager.instance.stress += 4;
+                break;
+            case "ChocolateBar":
+                GameManager.instance.energy += 2;
+                GameManager.instance.health += 1;
+                GameManager.instance.budget -= 3;
+                break;
+            case "CupOfNoodles":
+                GameManager.instance.energy += 1;
+                GameManager.instance.health -= 5;
+                GameManager.instance.health -= 0;
+                break;
+                    
+
+        }
+
 
     }
 }

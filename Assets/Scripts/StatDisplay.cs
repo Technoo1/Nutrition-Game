@@ -12,6 +12,10 @@ public class StatDisplay : MonoBehaviour
     public TextMeshProUGUI energy;
     public TextMeshProUGUI academic;
     public TextMeshProUGUI leftovers;
+    public TextMeshProUGUI youLose;
+    public TextMeshProUGUI youWin;
+
+
     // Start is called before the first frame update
     void Start()
     {

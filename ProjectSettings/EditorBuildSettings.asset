@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 7b24319e54718284c8482b72efdd2f6a
+  - enabled: 1
     path: Assets/Scenes/MorningScene.unity
     guid: 5222e06085e671a4d979e4dfcfeb9bd4
   - enabled: 1
@@ -14,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NightScene.unity
     guid: 990b78d6875fcf047b0b50dc0ba91e88
+  - enabled: 1
+    path: Assets/Scenes/VendingMachine.unity
+    guid: d6c888a875655b84b95181031025f5f7
   m_configObjects: {}

@@ -138,6 +138,18 @@ public class BackgroundSwapper : MonoBehaviour
         StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
     }
 
+    public void YouWin() // called by the dialogue
+    {
+        backgroundImageValue = 19; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+
+    public void YouLose() // called by the dialogue
+    {
+        backgroundImageValue = 20; // change this to the position of the image you're switching to in the list
+        StartCoroutine(FadeToBlack()); // fades background to black, changes the image, then fades back
+    }
+
 
     IEnumerator FadeToBlack()
     {
