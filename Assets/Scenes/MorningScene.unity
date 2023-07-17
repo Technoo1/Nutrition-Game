@@ -14355,6 +14355,7 @@ GameObject:
   - component: {fileID: 1549069229}
   - component: {fileID: 1549069231}
   - component: {fileID: 1549069230}
+  - component: {fileID: 1549069232}
   m_Layer: 0
   m_Name: DayFlowchart
   m_TagString: Untagged
@@ -14377,7 +14378,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 291.7896
-    y: -190.02422
+    y: -191.66356
     width: 122.1311
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -14441,7 +14442,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1549069225}
   selectedCommands:
-  - {fileID: 1549069230}
+  - {fileID: 1549069232}
   variables:
   - {fileID: 1549069124}
   - {fileID: 1549069123}
@@ -24430,7 +24431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1032.0535
+    x: 1028.7747
     y: 265.17316
     width: 131.96716
     height: 40
@@ -24445,6 +24446,7 @@ MonoBehaviour:
   - {fileID: 1549069227}
   - {fileID: 1549069231}
   - {fileID: 1549069230}
+  - {fileID: 1549069232}
   suppressAllAutoSelections: 0
 --- !u!114 &1549069226
 MonoBehaviour:
@@ -24563,6 +24565,31 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1549069232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3be095a4de0e3048bedb2787ce2d3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 291
+  indentLevel: 0
+  targetObject: {fileID: 0}
+  targetScript: {fileID: 0}
+  variableName: 
+  variableType: 0
+  operation: 0
+  compareValueFloat: 0
+  compareValueInt: 0
+  compareValueBool: 0
+  compareValueString: 
+  trueCommandIndex: 0
+  falseCommandIndex: 0
 --- !u!1 &1586830161
 GameObject:
   m_ObjectHideFlags: 0
