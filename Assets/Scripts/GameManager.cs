@@ -1,3 +1,4 @@
+using Fungus;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,6 +34,11 @@ public class GameManager : MonoBehaviour
 
     public int finalScore;
 
+    public GameObject CustomSayDialogue;
+    public CanvasGroup canvasGroup;
+    //public DialogInput dialogInput;
+
+    public Flowchart ActiveFlowchart { get; private set; }
 
     public Dictionary<string, int> meals = new Dictionary<string, int>();
 
@@ -50,6 +56,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Add your methods and functionality her
+    public void DisableDialogue()
+    {
+        canvasGroup.alpha = 0;
+        CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.Disabled;
+    }
+    public void EnableDialogue()
+    {
+        CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.ClickAnywhere;
+    }
+
 
 }
+    // Add your methods and functionality her
+
+

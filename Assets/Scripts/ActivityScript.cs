@@ -7,6 +7,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class ActivityScript : MonoBehaviour
 {
+    
     public Flowchart dayFlowchart;
     public Flowchart cookBookFlowchart;
     public Flowchart leftoversFlowchart;
