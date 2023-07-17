@@ -58,6 +58,7 @@ public class ActivityScript : MonoBehaviour
     public void Study()
     {
         GameManager.instance.academicAbilty += 10;
+        GameManager.instance.stress += 15;
         Debug.Log("+10 to academic ability");
         Debug.Log("Your academic ability is: " + GameManager.instance.academicAbilty);
     }
