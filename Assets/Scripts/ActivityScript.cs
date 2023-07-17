@@ -7,6 +7,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class ActivityScript : MonoBehaviour
 {
+    
     public Flowchart dayFlowchart;
     public Flowchart cookBookFlowchart;
     public Flowchart leftoversFlowchart;
@@ -28,6 +29,8 @@ public class ActivityScript : MonoBehaviour
     {
         IntegerVariable currentDay = dayFlowchart.GetVariable<IntegerVariable>("CurrentDay");
         currentDay.Value = GameManager.instance.currentDay;
+        FloatVariable budget = dayFlowchart.GetVariable<FloatVariable>("Budget");
+        budget.Value = GameManager.instance.budget;
         IntegerVariable healthy1 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy1");
         healthy1.Value = GameManager.instance.healthy1;
         IntegerVariable healthy2 = leftoversFlowchart.GetVariable<IntegerVariable>("healthy2");
