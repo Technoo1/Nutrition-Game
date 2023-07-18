@@ -9,6 +9,7 @@ public class LoadNewScene : MonoBehaviour
     {
         yield return new WaitForSeconds(0.6f);
         SceneManager.LoadScene("MainMenu");
+        
 
         Debug.Log("button clicked");
     }
