@@ -3837,6 +3837,7 @@ GameObject:
   - component: {fileID: 708041718}
   - component: {fileID: 708041719}
   - component: {fileID: 708041720}
+  - component: {fileID: 708041721}
   m_Layer: 0
   m_Name: DayFlowchart
   m_TagString: Untagged
@@ -3963,6 +3964,7 @@ MonoBehaviour:
   - {fileID: 708041690}
   - {fileID: 708041505}
   - {fileID: 708041639}
+  - {fileID: 708041721}
   - {fileID: 708041498}
   suppressAllAutoSelections: 0
 --- !u!114 &708041507
@@ -6848,7 +6850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -36.34489, y: 346.19586}
+  scrollPos: {x: 551.8129, y: 268.56424}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 433.66666
@@ -6861,7 +6863,8 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 708041506}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 708041721}
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -10458,6 +10461,23 @@ MonoBehaviour:
   scope: 1
   key: Budget
   value: 0
+--- !u!114 &708041721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 425
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 4170862f1106d23449732767eb7ba450, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &735263075
 GameObject:
   m_ObjectHideFlags: 1
@@ -10706,6 +10726,8 @@ MonoBehaviour:
   chocolateBar: 
   cupNoodles: 
   finalScore: 0
+  CustomSayDialogue: {fileID: 0}
+  canvasGroup: {fileID: 0}
 --- !u!4 &777106914
 Transform:
   m_ObjectHideFlags: 0
@@ -20332,15 +20354,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 120484162}
-  - {fileID: 140730389}
-  - {fileID: 51105792}
-  - {fileID: 1991496168}
-  - {fileID: 888711318}
-  - {fileID: 1557864277}
-  - {fileID: 2070005142}
-  - {fileID: 242851346}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22393,7 +22407,7 @@ RectTransform:
   - {fileID: 30791466}
   - {fileID: 333221877}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
