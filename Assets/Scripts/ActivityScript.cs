@@ -7,6 +7,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class ActivityScript : MonoBehaviour
 {
+    
     public Flowchart dayFlowchart;
     public Flowchart cookBookFlowchart;
     public Flowchart leftoversFlowchart;
@@ -50,6 +51,12 @@ public class ActivityScript : MonoBehaviour
         unhealthy3.Value = GameManager.instance.unhealthy3;
         Debug.Log("variables updated");
     }
+
+    public void GoToWork()
+    {
+        GameManager.instance.budget += 15;
+        Debug.Log("We earned some money!");
+    }
     public void EndOfNight()
     {
         GameManager.instance.currentDay += 1;
@@ -57,6 +64,7 @@ public class ActivityScript : MonoBehaviour
     public void Study()
     {
         GameManager.instance.academicAbilty += 10;
+        GameManager.instance.stress += 8;
         Debug.Log("+10 to academic ability");
         Debug.Log("Your academic ability is: " + GameManager.instance.academicAbilty);
     }
