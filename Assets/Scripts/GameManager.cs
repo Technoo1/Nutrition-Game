@@ -56,17 +56,43 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            DisableDialogue();
+        }
+    }
+
     public void DisableDialogue()
     {
-        canvasGroup.alpha = 0;
+        //canvasGroup.alpha = 0;
         CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.Disabled;
+        StartCoroutine(MoveObject(CustomSayDialogue.transform, new Vector3(-750f, -3f, 0), 1f));
     }
     public void EnableDialogue()
     {
         CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.ClickAnywhere;
     }
+    IEnumerator MoveObject(Transform objectToMove, Vector3 targetPosition, float duration)
+    {
+        float elapsed = 0;
+        Vector3 startingPosition = objectToMove.localPosition;
 
+        while (elapsed < duration)
+        {
+            objectToMove.localPosition = Vector3.Lerp(startingPosition, targetPosition, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        objectToMove.localPosition = targetPosition;
+        
+    }
 
+    public void Test()
+    {
+        Debug.Log("Logged");
+    }
 }
     // Add your methods and functionality her
 
