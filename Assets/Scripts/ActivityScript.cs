@@ -55,6 +55,7 @@ public class ActivityScript : MonoBehaviour
     public void GoToWork()
     {
         GameManager.instance.budget += 15;
+        GameManager.instance.stress += 5;
         Debug.Log("We earned some money!");
     }
     public void EndOfNight()
