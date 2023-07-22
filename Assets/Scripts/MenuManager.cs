@@ -152,7 +152,36 @@ public class MenuManager : MonoBehaviour
 
         foreach (KeyValuePair<string, int> stat in meal.stats)
         {
-            switch (stat.Key)
+            if(sizeOfMeal == 1)
+            {
+                switch (stat.Key)
+                {
+                    case "Cost":
+                        GameManager.instance.budget -= stat.Value * sizeOfMeal;
+                        break;
+                    case "Health":
+                        GameManager.instance.health += stat.Value;
+                        break;
+                    case "Stress":
+                        GameManager.instance.stress += stat.Value;
+                        break;
+                    case "Energy":
+                        GameManager.instance.energy += stat.Value;
+                        break;
+                        // Add additional cases here for other stat types
+                }
+            }
+            else if(sizeOfMeal == 2)
+            {
+                switch (stat.Key)
+                {
+                    case "Cost":
+                        GameManager.instance.budget -= stat.Value * sizeOfMeal;
+                        break;
+                }
+            }
+
+            /*switch (stat.Key)
             {
                 case "Cost":
                     GameManager.instance.budget -= stat.Value * sizeOfMeal;
@@ -167,7 +196,7 @@ public class MenuManager : MonoBehaviour
                     GameManager.instance.energy += stat.Value;
                     break;
                     // Add additional cases here for other stat types
-            }
+            }*/
         }
         if(sizeOfMeal == 1)
         {
