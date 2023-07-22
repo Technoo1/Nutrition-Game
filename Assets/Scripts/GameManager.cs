@@ -2,6 +2,7 @@ using Fungus;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,7 +36,10 @@ public class GameManager : MonoBehaviour
     public int finalScore;
 
     public GameObject CustomSayDialogue;
+    public GameObject CustomSayDialoguePanel;
     public CanvasGroup canvasGroup;
+    public bool isPaused = false;
+    private Vector3 originalPosition;
     //public DialogInput dialogInput;
 
     public Flowchart ActiveFlowchart { get; private set; }
@@ -58,35 +62,49 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false)
         {
             DisableDialogue();
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && isPaused == true)
+        {
+            EnableDialogue();
         }
     }
 
     public void DisableDialogue()
     {
-        //canvasGroup.alpha = 0;
+        // Store the original position
+        originalPosition = CustomSayDialoguePanel.GetComponent<RectTransform>().anchoredPosition;
+
         CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.Disabled;
-        StartCoroutine(MoveObject(CustomSayDialogue.transform, new Vector3(-750f, -3f, 0), 1f));
+        StartCoroutine(MoveObject(CustomSayDialoguePanel.GetComponent<RectTransform>(), new Vector3(-750f, -3f, 0), 0.25f));
+        isPaused = true;
     }
     public void EnableDialogue()
     {
         CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.ClickAnywhere;
+        StartCoroutine(MoveObject(CustomSayDialoguePanel.GetComponent<RectTransform>(), originalPosition, 0.25f));
+        isPaused = false;
     }
-    IEnumerator MoveObject(Transform objectToMove, Vector3 targetPosition, float duration)
+    IEnumerator MoveObject(RectTransform objectToMove, Vector3 targetPosition, float duration)
     {
         float elapsed = 0;
-        Vector3 startingPosition = objectToMove.localPosition;
+        Vector3 startingPosition = objectToMove.anchoredPosition;
 
         while (elapsed < duration)
         {
-            objectToMove.localPosition = Vector3.Lerp(startingPosition, targetPosition, elapsed / duration);
+            objectToMove.anchoredPosition = Vector3.Lerp(startingPosition, targetPosition, elapsed / duration);
             elapsed += Time.deltaTime;
             yield return null;
         }
-        objectToMove.localPosition = targetPosition;
+        objectToMove.anchoredPosition = targetPosition;
         
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void Test()
