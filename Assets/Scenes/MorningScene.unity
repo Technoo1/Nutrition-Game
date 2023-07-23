@@ -1531,6 +1531,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192075218}
   m_CullTransparentMesh: 1
+--- !u!1 &197693449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197693452}
+  - component: {fileID: 197693451}
+  - component: {fileID: 197693450}
+  m_Layer: 5
+  m_Name: DayMetre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &197693450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197693449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 940179524, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &197693451
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197693449}
+  m_CullTransparentMesh: 1
+--- !u!224 &197693452
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197693449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 871809232}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 378.72595, y: 201.7259}
+  m_SizeDelta: {x: 40.5482, y: 40.5482}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &214115933
 GameObject:
   m_ObjectHideFlags: 0
@@ -4957,7 +5033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1977058391}
+  selectedFlowchart: {fileID: 1549068955}
 --- !u!4 &735263077
 Transform:
   m_ObjectHideFlags: 1
@@ -6176,6 +6252,15 @@ MonoBehaviour:
   leftovers: {fileID: 710184073}
   youLose: {fileID: 0}
   youWin: {fileID: 0}
+  daymetre:
+  - {fileID: 940179524, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  - {fileID: 1970248857, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  - {fileID: -1814360673, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  - {fileID: -926086766, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  - {fileID: -1251383248, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  - {fileID: 763189345, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  - {fileID: 1620489697, guid: f7b6c9f2692ad774e9c571952fb8d751, type: 3}
+  image: {fileID: 197693450}
 --- !u!114 &871809229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6259,6 +6344,7 @@ RectTransform:
   - {fileID: 1668864222}
   - {fileID: 742312101}
   - {fileID: 710184075}
+  - {fileID: 197693452}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14842,6 +14928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentDay: 1
+  activityTotal: 0
   health: 10
   stress: 10
   energy: 10
@@ -15952,7 +16039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 291.7896
+    x: 290.2971
     y: -191.66356
     width: 125.62185
     height: 40
@@ -16015,7 +16102,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1549069009}
+  - {fileID: 1549068954}
   selectedCommands: []
   variables:
   - {fileID: 1549069124}
@@ -25874,7 +25961,7 @@ MonoBehaviour:
   sayDialog: {fileID: 1609711262}
 --- !u!114 &1549069220
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25902,7 +25989,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1549069221
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

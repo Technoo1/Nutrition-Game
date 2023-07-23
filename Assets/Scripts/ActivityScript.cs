@@ -54,12 +54,17 @@ public class ActivityScript : MonoBehaviour
     public void EndOfNight()
     {
         GameManager.instance.currentDay += 1;
+        if(GameManager.instance.activityTotal > 0)
+        {
+            GameManager.instance.activityTotal = 0;
+        }
     }
     public void Study()
     {
         GameManager.instance.academicAbilty += 10;
         Debug.Log("+10 to academic ability");
         Debug.Log("Your academic ability is: " + GameManager.instance.academicAbilty);
+        GameManager.instance.activityTotal += 1;
     }
     public void Relax()
     {
@@ -69,6 +74,7 @@ public class ActivityScript : MonoBehaviour
         Debug.Log("Your stress is " + GameManager.instance.stress);
         Debug.Log("+10 to energy");
         Debug.Log("Your energy is " + GameManager.instance.energy);
+        GameManager.instance.activityTotal += 1;
     }
     public void DidntEat()
     {
@@ -186,6 +192,7 @@ public class ActivityScript : MonoBehaviour
                 Debug.Log("something went wrong. chosenMeal = " + chosenMeal);
                 break;
         }
+        GameManager.instance.activityTotal += 1;
     }
     public void CookMeal()
     {
@@ -351,7 +358,7 @@ public class ActivityScript : MonoBehaviour
                 Debug.Log("something went wrong. chosenMeal = " + chosenMeal);
                 break;
         }
-
+        GameManager.instance.activityTotal += 1;
     }
     public void VendingMachineSnack()
     {
@@ -392,6 +399,6 @@ public class ActivityScript : MonoBehaviour
 
         }
 
-
+        GameManager.instance.activityTotal += 1;
     }
 }
