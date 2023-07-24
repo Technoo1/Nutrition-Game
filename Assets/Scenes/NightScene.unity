@@ -1403,10 +1403,8 @@ MonoBehaviour:
   chocolateBar: 
   cupNoodles: 
   finalScore: 0
-  CustomSayDialogue: {fileID: 874759740}
-  CustomSayDialoguePanel: {fileID: 1675818167}
-  canvasGroup: {fileID: 874759741}
-  isPaused: 0
+  CustomSayDialogue: {fileID: 0}
+  canvasGroup: {fileID: 0}
 --- !u!4 &154436302
 Transform:
   m_ObjectHideFlags: 0
@@ -4552,8 +4550,6 @@ GameObject:
   - component: {fileID: 708041708}
   - component: {fileID: 708041709}
   - component: {fileID: 708041710}
-  - component: {fileID: 708041712}
-  - component: {fileID: 708041711}
   m_Layer: 0
   m_Name: DayFlowchart
   m_TagString: Untagged
@@ -4665,7 +4661,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 320.6815
     y: 224.77982
-    width: 104.02295
+    width: 105.29411
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4685,6 +4681,7 @@ MonoBehaviour:
   - {fileID: 708041505}
   - {fileID: 708041708}
   - {fileID: 708041639}
+  - {fileID: 708041710}
   - {fileID: 708041498}
   suppressAllAutoSelections: 0
 --- !u!114 &708041507
@@ -6840,9 +6837,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 281.18216
-    y: -100.30011
-    width: 149.99994
+    x: 282.35864
+    y: -101.47658
+    width: 151.17645
     height: 40
   tint: {r: 1, g: 0.572327, b: 0.7979817, a: 1}
   useCustomTint: 1
@@ -6904,7 +6901,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 552.0627
     y: 43.699738
-    width: 130.45972
+    width: 132.35294
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6936,7 +6933,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 909.56903
     y: -90.00043
-    width: 81.03446
+    width: 81.7647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6977,7 +6974,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 63.5495
     y: -33.701958
-    width: 127.011444
+    width: 127.64705
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7011,7 +7008,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -255.40266
     y: -73.62138
-    width: 82.18388
+    width: 82.94117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7085,9 +7082,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 300.10648
+    x: 298.61395
     y: -192.64175
-    width: 108.62065
+    width: 109.999985
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -7121,11 +7118,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 627.3275, y: 598.50037}
+  scrollPos: {x: 321.72253, y: 260.83484}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 313
-  zoom: 0.5800004
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -7133,8 +7130,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 708041506}
-  selectedCommands: []
+  - {fileID: 708041573}
+  selectedCommands:
+  - {fileID: 708041569}
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -8560,7 +8558,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 375.3473
     y: 48.23299
-    width: 123.56317
+    width: 124.11764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9219,8 +9217,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 291.3664
-    y: 8.184907
-    width: 122.41374
+    y: 9.909043
+    width: 122.94116
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10361,7 +10359,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.7801
     y: 58.047775
-    width: 128.16086
+    width: 128.82352
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10871,7 +10869,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 545.8787
     y: -45.68313
-    width: 129.31029
+    width: 131.17645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11686,68 +11684,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 708041497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 255
   indentLevel: 0
-  sayDialog: {fileID: 874759747}
---- !u!114 &708041711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708041497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 257
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 1462360946}
-  targetComponentAssemblyName: MenuManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: MenuManager
-  targetMethod: BigMeal
-  targetMethodText: 'BigMeal (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &708041712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708041497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 256
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 1462360946}
-  targetComponentAssemblyName: MenuManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: MenuManager
-  targetMethod: FastMeal
-  targetMethodText: 'FastMeal (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
+  soundClip: {fileID: 8300000, guid: 4170862f1106d23449732767eb7ba450, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &735263075
 GameObject:
   m_ObjectHideFlags: 1
