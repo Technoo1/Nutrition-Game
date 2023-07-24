@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class StatDisplay : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class StatDisplay : MonoBehaviour
     public TextMeshProUGUI youLose;
     public TextMeshProUGUI youWin;
 
-
+    public List<Sprite> daymetre;
+    public Image image;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +37,7 @@ public class StatDisplay : MonoBehaviour
             + GameManager.instance.healthy3 + GameManager.instance.mid1 + GameManager.instance.mid2 +
             GameManager.instance.mid3 + GameManager.instance.unhealthy1 + GameManager.instance.unhealthy2
             + GameManager.instance.unhealthy3);
+
+        image.sprite = daymetre[GameManager.instance.activityTotal];
     }
 }
