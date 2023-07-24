@@ -2,6 +2,7 @@ using Fungus;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     // Add your variables here
     public int currentDay = 1;
+    public int activityTotal = 0;
     public int health = 10;
     public int stress = 10;
     public int energy = 10;
@@ -35,7 +37,10 @@ public class GameManager : MonoBehaviour
     public int finalScore;
 
     public GameObject CustomSayDialogue;
+    public GameObject CustomSayDialoguePanel;
     public CanvasGroup canvasGroup;
+    public bool isPaused = false;
+    private Vector3 originalPosition;
     //public DialogInput dialogInput;
 
     public Flowchart ActiveFlowchart { get; private set; }
@@ -56,17 +61,57 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && isPaused == false)
+        {
+            DisableDialogue();
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape) && isPaused == true)
+        {
+            EnableDialogue();
+        }
+    }
+
     public void DisableDialogue()
     {
-        canvasGroup.alpha = 0;
+        // Store the original position
+        originalPosition = CustomSayDialoguePanel.GetComponent<RectTransform>().anchoredPosition;
+
         CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.Disabled;
+        StartCoroutine(MoveObject(CustomSayDialoguePanel.GetComponent<RectTransform>(), new Vector3(-750f, -3f, 0), 0.25f));
+        isPaused = true;
     }
     public void EnableDialogue()
     {
         CustomSayDialogue.GetComponent<DialogInput>().clickMode = ClickMode.ClickAnywhere;
+        StartCoroutine(MoveObject(CustomSayDialoguePanel.GetComponent<RectTransform>(), originalPosition, 0.25f));
+        isPaused = false;
+    }
+    IEnumerator MoveObject(RectTransform objectToMove, Vector3 targetPosition, float duration)
+    {
+        float elapsed = 0;
+        Vector3 startingPosition = objectToMove.anchoredPosition;
+
+        while (elapsed < duration)
+        {
+            objectToMove.anchoredPosition = Vector3.Lerp(startingPosition, targetPosition, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        objectToMove.anchoredPosition = targetPosition;
+        
     }
 
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("StartScreen");
+    }
 
+    public void Test()
+    {
+        Debug.Log("Logged");
+    }
 }
     // Add your methods and functionality her
 

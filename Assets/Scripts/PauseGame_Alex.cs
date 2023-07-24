@@ -14,20 +14,36 @@ public class PauseGame_Alex : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
+        /*if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
             pauseMenuAnim.SetTrigger("StartStopAnim");
             Debug.Log("paused");
 
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             isPaused = true;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isPaused)
         {
             pauseMenuAnim.SetTrigger("StartStopAnim");
-            Time.timeScale = 1;
+            //Time.timeScale = 1;
             isPaused = false;
             Debug.Log("Unpaused");
-        }
+        }*/
+    }
+
+    public void OpenMenu()
+    {
+        pauseMenuAnim.SetTrigger("StartStopAnim");
+        Debug.Log("paused");
+
+        //Time.timeScale = 0;
+        isPaused = true;
+    }
+    public void CloseMenu()
+    {
+        pauseMenuAnim.SetTrigger("StartStopAnim");
+        //Time.timeScale = 1;
+        isPaused = false;
+        Debug.Log("Unpaused");
     }
 }
