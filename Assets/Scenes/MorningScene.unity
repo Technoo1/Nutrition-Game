@@ -14976,8 +14976,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fd3acc489906f8d4299f724658af35eb, type: 3}
   - {fileID: 21300000, guid: 36684b2b62c85614499bd2b6f0996c72, type: 3}
   - {fileID: 21300000, guid: 1d5c2f62c16d6994fb1d227ede4117f0, type: 3}
-  - {fileID: 21300000, guid: cb817fcc513c41b4db57eb971399960f, type: 3}
-  - {fileID: 21300000, guid: 180e0de909464a0498db2a8ad2e781a6, type: 3}
+  - {fileID: 21300000, guid: 1964e37c134159f45a31407aa656231d, type: 3}
+  - {fileID: 21300000, guid: 0233f3fb4dadcaa4bbc4c38058e5b21e, type: 3}
   - {fileID: 21300000, guid: 103c853f9847f264b81a1f87d762b49b, type: 3}
   image: {fileID: 1310304086}
   fadeDuration: 0.2
@@ -16259,6 +16259,8 @@ GameObject:
   - component: {fileID: 1549069228}
   - component: {fileID: 1549069227}
   - component: {fileID: 1549069226}
+  - component: {fileID: 1549069238}
+  - component: {fileID: 1549069239}
   m_Layer: 0
   m_Name: DayFlowchart
   m_TagString: Untagged
@@ -16291,6 +16293,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1549069125}
   commandList:
+  - {fileID: 1549069238}
   - {fileID: 1549069048}
   - {fileID: 1549069176}
   - {fileID: 1549069186}
@@ -16331,7 +16334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -126.26856, y: 211.16092}
+  scrollPos: {x: 430.44754, y: 288.7728}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 446
@@ -16342,8 +16345,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1549069104}
+  selectedCommands:
+  - {fileID: 1549069239}
   variables:
   - {fileID: 1549069124}
   - {fileID: 1549069123}
@@ -20677,6 +20682,7 @@ MonoBehaviour:
   - {fileID: 1549069103}
   - {fileID: 1549069106}
   - {fileID: 1549069105}
+  - {fileID: 1549069239}
   suppressAllAutoSelections: 0
 --- !u!114 &1549069105
 MonoBehaviour:
@@ -27329,6 +27335,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 287
   indentLevel: 0
+--- !u!114 &1549069238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831c208af3cccf24b80cc6f3768919bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 299
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: f12662c077d54f74e940b90d38d2a5e6, type: 3}
+  volume: 1
+  loop: 0
+--- !u!114 &1549069239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549068951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 300
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 4170862f1106d23449732767eb7ba450, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1586830161
 GameObject:
   m_ObjectHideFlags: 0
