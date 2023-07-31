@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CookingMenu : MonoBehaviour
+public class MealList : MonoBehaviour
 {
-    public GameObject cookingMenuUI;
     // Start is called before the first frame update
     void Start()
     {
