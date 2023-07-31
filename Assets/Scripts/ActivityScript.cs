@@ -401,4 +401,10 @@ public class ActivityScript : MonoBehaviour
 
         GameManager.instance.activityTotal += 1;
     }
+
+    public void GoToWork()
+    {
+        GameManager.instance.stress += 10;
+        GameManager.instance.budget += 15;
+    }
 }
