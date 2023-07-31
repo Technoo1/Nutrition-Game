@@ -4915,6 +4915,7 @@ GameObject:
   - component: {fileID: 708041723}
   - component: {fileID: 708041725}
   - component: {fileID: 708041738}
+  - component: {fileID: 708041739}
   m_Layer: 0
   m_Name: DayFlowchart
   m_TagString: Untagged
@@ -5041,6 +5042,7 @@ MonoBehaviour:
   - {fileID: 708041690}
   - {fileID: 708041505}
   - {fileID: 708041639}
+  - {fileID: 708041739}
   - {fileID: 708041498}
   suppressAllAutoSelections: 0
 --- !u!114 &708041507
@@ -7940,8 +7942,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 708041506}
+  selectedCommands:
+  - {fileID: 708041739}
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -12652,6 +12656,23 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &708041739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 443
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 4170862f1106d23449732767eb7ba450, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &711818132
 GameObject:
   m_ObjectHideFlags: 0
@@ -13870,6 +13891,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fd3acc489906f8d4299f724658af35eb, type: 3}
   - {fileID: 21300000, guid: 36684b2b62c85614499bd2b6f0996c72, type: 3}
   - {fileID: 21300000, guid: 1d5c2f62c16d6994fb1d227ede4117f0, type: 3}
+  - {fileID: 21300000, guid: 1d5c2f62c16d6994fb1d227ede4117f0, type: 3}
+  - {fileID: 21300000, guid: 1d5c2f62c16d6994fb1d227ede4117f0, type: 3}
+  - {fileID: 21300000, guid: 103c853f9847f264b81a1f87d762b49b, type: 3}
   image: {fileID: 1046890586}
   fadeDuration: 0.2
   backgroundImageValue: 0

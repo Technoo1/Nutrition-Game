@@ -4554,6 +4554,7 @@ GameObject:
   - component: {fileID: 708041710}
   - component: {fileID: 708041712}
   - component: {fileID: 708041711}
+  - component: {fileID: 708041713}
   m_Layer: 0
   m_Name: DayFlowchart
   m_TagString: Untagged
@@ -4665,7 +4666,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 320.6815
     y: 224.77982
-    width: 104.02295
+    width: 103.44824
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4685,6 +4686,7 @@ MonoBehaviour:
   - {fileID: 708041505}
   - {fileID: 708041708}
   - {fileID: 708041639}
+  - {fileID: 708041713}
   - {fileID: 708041498}
   suppressAllAutoSelections: 0
 --- !u!114 &708041507
@@ -6842,7 +6844,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 281.18216
     y: -100.30011
-    width: 149.99994
+    width: 148.27579
     height: 40
   tint: {r: 1, g: 0.572327, b: 0.7979817, a: 1}
   useCustomTint: 1
@@ -6904,7 +6906,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 552.0627
     y: 43.699738
-    width: 130.45972
+    width: 129.31029
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6977,7 +6979,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 63.5495
     y: -33.701958
-    width: 127.011444
+    width: 125.862015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7011,7 +7013,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -255.40266
     y: -73.62138
-    width: 82.18388
+    width: 82.7586
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7134,7 +7136,8 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 708041506}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 708041713}
   variables:
   - {fileID: 708041558}
   - {fileID: 708041525}
@@ -8560,7 +8563,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 375.3473
     y: 48.23299
-    width: 123.56317
+    width: 122.41374
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10361,7 +10364,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.7801
     y: 58.047775
-    width: 128.16086
+    width: 125.862015
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11748,6 +11751,23 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &708041713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708041497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 258
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 4170862f1106d23449732767eb7ba450, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &735263075
 GameObject:
   m_ObjectHideFlags: 1
